@@ -5,11 +5,6 @@ This repository is dedicated to practicing and learning the Spring Framework. It
 ## Contents
 
 - Basic Spring setup
-- Dependency Injection
-- Spring MVC
-- Spring Boot
-- Spring Data JPA
-- Spring Security
 
 ## Getting Started
 
@@ -23,15 +18,7 @@ cd spring-practice
 ## Prerequisites
 
 - Java Development Kit (JDK) 8 or higher
-- Maven or Gradle
+- Maven
 - An IDE such as IntelliJ IDEA or Eclipse
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License.
 
 Happy coding!
