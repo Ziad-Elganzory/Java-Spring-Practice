@@ -1,1 +1,2 @@
-# 02 Spring Boot Spring Core
+# Java Spring Practice
+Examples are in separate branches
