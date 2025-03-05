@@ -1,4 +1,4 @@
-package com.codezury.springcoredemo;
+package com.codezury.springcoredemo.common;
 
 import org.springframework.stereotype.Component;
 
