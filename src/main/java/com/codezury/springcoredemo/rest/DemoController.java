@@ -11,12 +11,16 @@ public class DemoController {
     //define a private field for dependency
     //@Autowired
     private Coach myCoach;
+    private Coach anotherCoach;
 
     //define a constructor for dependency injection
     @Autowired
-    public DemoController(@Qualifier("cricketCoach") Coach theCoach){
+    public DemoController(
+            @Qualifier("cricketCoach") Coach theCoach,
+            @Qualifier("cricketCoach") Coach theAnotherCoach){
         System.out.println("In constructor: "+ getClass().getSimpleName());
         myCoach = theCoach;
+        anotherCoach = theAnotherCoach;
     }
     // Use Setter injection
     /*@Autowired
@@ -27,5 +31,14 @@ public class DemoController {
     @GetMapping("/dailyworkout")
     public String getDailyWorkout(){
         return myCoach.getDailyWorkout();
+    }
+
+    /*Check the bean scope
+       SINGLETON : True
+       PROTOTYPE : False
+     */
+    @GetMapping("/check")
+    public String check() {
+        return "Comparing Beans: myCoach == anotherCoach, " + (myCoach == anotherCoach);
     }
 }
